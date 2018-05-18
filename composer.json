@@ -1,16 +1,16 @@
 {
-    "name": "song/rypapp",
+    "name": "sgqpet/rypapp",
     "type": "library",
     "authors": [
         {
-            "name": "Song",
+            "name": "sgqpet",
             "email": "sgqpet@163.com"
         }
     ],
     "require": {},
 	"autoload": {
     "psr-4": {
-        "Song\\Rypapp\\": "src/"
+        "sgqpet\\Rypapp\\": "src/"
     }
 }
 }
