@@ -1,6 +1,5 @@
 {
     "name": "sgqpet/rypapp",
-    "type": "library",
     "authors": [
         {
             "name": "sgqpet",
@@ -10,7 +9,7 @@
     "require": {},
 	"autoload": {
     "psr-4": {
-        "sgqpet\\Rypapp\\": "src/"
+        "Sgqpet\\Rypapp\\": "src/"
     }
 }
 }
