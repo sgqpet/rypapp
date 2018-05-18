@@ -7,5 +7,10 @@
             "email": "sgqpet@163.com"
         }
     ],
-    "require": {}
+    "require": {},
+	"autoload": {
+    "psr-4": {
+        "Song\\Rypapp\\": "src/"
+    }
+}
 }
