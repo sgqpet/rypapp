@@ -8,8 +8,8 @@
     ],
     "require": {},
 	"autoload": {
-    "psr-4": {
-        "Sgqpet\\Rypapp\\": "src/"
-    }
-}
+		"psr-4": {
+			"Sgqpet\\Rypapp\\": "src/"
+		}
+	}
 }
