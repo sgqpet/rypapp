@@ -1,0 +1,11 @@
+{
+    "name": "song/app",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Song",
+            "email": "sgqpet@163.com"
+        }
+    ],
+    "require": {}
+}
