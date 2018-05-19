@@ -1,6 +1,6 @@
 <?php
 
-namespace Song\Rypapp;
+namespace Sgqpet\Rypapp;
 
 use Illuminate\Support\ServiceProvider;
 

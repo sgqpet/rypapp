@@ -1,5 +1,5 @@
 <?php
-namespace Song\Rypapp;
+namespace Sgqpet\Rypapp;
 use Illuminate\Config\Repository;
 use Config,Session;
 class Rypapp{
