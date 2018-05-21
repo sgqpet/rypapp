@@ -16,8 +16,8 @@ class RypappServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/views', 'rypapp'); // 视图目录指定
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/vendor/rypapp'),  // 发布视图目录到resources 下
-            __DIR__.'/config/rypapp.php' => config_path('rypapp.php'), // 发布配置文件到 laravel 的config 下
+            __DIR__.'/Views' => base_path('resources/views/vendor/rypapp'),  // 发布视图目录到resources 下
+            __DIR__.'/Config/rypapp.php' => config_path('rypapp.php'), // 发布配置文件到 laravel 的config 下
         ]);
     }
 
