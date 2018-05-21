@@ -28,7 +28,7 @@ class Rypapp{
      */
     public function testing($msg = ''){
         $config_arr = Config::get('rypapp');
-        Session::put("sess","I am Session");
+        Session::put("sess","I am Session v1.5");
         dump($config_arr );
         return $msg.' from your custom develop package!-'.Session::get('sess');
     }
