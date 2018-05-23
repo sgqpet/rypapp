@@ -14,6 +14,8 @@ class Rypapp{
      * @var Repository
      */
     protected $config;
+
+    public const SECRET_KEY = 'secret_key';
     /**
      * rypapp constructor.
      * @param SessionManager $session
@@ -85,8 +87,9 @@ class Rypapp{
     }
 
     //生成签名字符串
-    static public function arrtostring( $params , $except = 'pk' ){
-        $key = '';
+    static public function arrtostring( $params ){
+        $key    = '';
+        $except = self::SECRET_KEY;
         if( !$params ){ return false; }
         if( isset( $params[$except] ) ){ unset( $params[$except] ); }
         
@@ -103,5 +106,10 @@ class Rypapp{
         foreach( $data as $k=>$v ){
             $request->$k = $v;
         }
+    }
+
+    //获得key名字
+    static public function get_secret_key(){
+        return self::SECRET_KEY;
     }
 }
