@@ -25,6 +25,11 @@ class Rypapp{
         $this->config  = $config;
     }
 
+    //init
+    public function ryp_init(){
+        return true;
+    }
+
     //加密
     static public function rsa_encode( $data , $url = true ){
         $re = self::get_rsa_object()->encrypt( $data );

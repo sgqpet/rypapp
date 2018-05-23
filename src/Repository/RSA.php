@@ -202,13 +202,13 @@ class RSA{
     {  
         $ret = false;  
         $data = $this->_decode($data, $code); 
-       // dump($data); 
+
         if (!$this->_checkPadding($padding, 'de')) $this->_error('padding error');  
         if ($data !== false) {  
             if (openssl_private_decrypt($data, $result, $this->priKey, $padding)) {  
                 $ret = $rev ? rtrim(strrev($result), "\0") : '' . $result;  
             }  
-           // dump($result);
+
         }  
         return $ret;  
     }  
