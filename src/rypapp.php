@@ -90,7 +90,7 @@ class Rypapp{
     static public function arrtostring( $params ){
         $key    = '';
         $except = self::SECRET_KEY;
-        if( !$params ){ return false; }
+
         if( isset( $params[$except] ) ){ unset( $params[$except] ); }
         
         sort($params);
